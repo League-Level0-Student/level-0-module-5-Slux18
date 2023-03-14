@@ -44,7 +44,7 @@ public class AmazingRings extends PApplet {
 
     @Override
     public void settings() {
-
+size(WIDTH,HEIGHT);
     }
 
     @Override

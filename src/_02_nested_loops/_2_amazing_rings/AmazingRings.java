@@ -8,7 +8,7 @@ import processing.core.PImage;
  * 
  * 1. Open the demonstration for this recipe by opening the Recipe.html
  *    file in this folder.
- * 
+ *
  * In the setup() method:
  * 2. Set the size of your window to be a rectangle like in the recipe
  *    demonstration
@@ -25,7 +25,7 @@ import processing.core.PImage;
  * 6. When the rings reach the right side of the sketch, reverse the direction
  *    so they move
  *    Hint: speed = -speed
-      
+ *     
  * 7. When the rings reach the left side of the sketch, reverse the direction
  *    again.
  * 
@@ -41,12 +41,15 @@ public class AmazingRings extends PApplet {
     static final int HEIGHT = 600;
 
     PImage waldo;
-
+int x1 = 100;
+int x2 =700;
+int y1 =400;
+int y2 =400;
     @Override
     public void settings() {
 size(WIDTH,HEIGHT);
-    }
 
+    }
     @Override
     public void setup() {
 
@@ -54,7 +57,17 @@ size(WIDTH,HEIGHT);
 
     @Override
     public void draw() {
-
+    	background(200);
+    	noFill();
+for(int i=200;i>0;i-=5) {
+	ellipse(x1,y1,i*2,i*2);
+	
+}
+for(int p=200;p>0;p-=5) {
+	ellipse(x2,y2,p*2,p*2);
+}
+x1 +=1;
+x2 +=-1;
     }
 
     static public void main(String[] args) {

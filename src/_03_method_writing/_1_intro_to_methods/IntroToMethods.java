@@ -1,5 +1,9 @@
 package _03_method_writing._1_intro_to_methods;
 
+import java.security.PublicKey;
+
+import org.omg.CORBA.PUBLIC_MEMBER;
+
 public class IntroToMethods {
 	/*
 	 * 3 parts to a method
@@ -16,7 +20,7 @@ public class IntroToMethods {
 	 * 		Always inside the ()
 	 * 
 	 * Extra Note: "public" is optional and use "static" if calling the method from main
-	 * 
+	 *
 	 * 
 	 * Instructions
 	 * ------------
@@ -25,24 +29,20 @@ public class IntroToMethods {
 	 * FIGURE OUT THE 3 PARTS TO EACH METHOD
 	 */
 	public static void main(String[] args) {
+		
 		// Method1
 		method1();
-
 		// Method2
 		String output2 = method2();
 		System.out.println(output2);
-
 		// Method3
-		method3("Method3");
-		
+		method3("Method3");		
 		// Method4
 		String output4 = method4("Method4");
 		System.out.println(output4);
-		
 		// Method5
 		method5("Method", 5);
 	}
-	
 	public static void method1() {
 		System.out.println("Method1");
 	}

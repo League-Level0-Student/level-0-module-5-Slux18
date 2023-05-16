@@ -24,12 +24,51 @@ int task1 = JOptionPane.showOptionDialog(null, "how do u want to make your pet h
 			//    user that he loves his pet and use break; to exit for loop.
 			int task2 = JOptionPane.showOptionDialog(null, "Question", "Title", 0, JOptionPane.INFORMATION_MESSAGE, null,
 					new String[] { "walk", "groom", "clean up poop" }, null);
-			
-			
-			
-	}
+			if(task1 == 0) {
+				cuddle();
+			}
+			if(task1==1) {
+				food();
+			}
+			if(task1==2) {
+				water();
+			}
+			if(task2==0) {
+				walk();
+			}
+			if(task2==1) {
+				groom();
+			}
+			if(task2==2) {
+				poop();
+			}
+			}
+	
 
 	// 5. Create methods to handle each of your user selections.
 	//    Each method should create a pop-up with the pet's response (eg. cat might purr when pet), 
 	//    and INCREMENT the pet's happiness Level.
+	
+	public static void cuddle() {
+		JOptionPane.showMessageDialog(null, "thanks for the cuddle!");
+	}
+	public static void food() {
+		JOptionPane.showMessageDialog(null, "that was bussin bussin!");
+	}
+	public static void water() {
+		JOptionPane.showMessageDialog(null, "i was about to die of thirst thanks!");
+	}
+	public static void walk() {
+		JOptionPane.showMessageDialog(null, "wow i need a nap after that one!");
+	}
+	public static void groom() {
+		JOptionPane.showMessageDialog(null, "thanks for the groom i look very spicy!");
+	}
+	public static void poop() {
+		JOptionPane.showMessageDialog(null, "thanks for the cleanup u u risked alot there!");
+	}
+	
+	
+	
+	
 }

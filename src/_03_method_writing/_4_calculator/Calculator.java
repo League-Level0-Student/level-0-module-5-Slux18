@@ -1,4 +1,4 @@
-package _03_method_writing._4_calculator;
+ package _03_method_writing._4_calculator;
 
 import javax.swing.JOptionPane;
 
@@ -14,14 +14,22 @@ public class Calculator {
 				JOptionPane.INFORMATION_MESSAGE, null, new String[] { "divide", "multiply", "subtract", "add" }, null);
 
 		// 3) Call the correct method depending on what option the user chooses
-		
+		System.out.println(task);
+		if(task==3) {
+			add(number1,number2);
+		}
+		//if(task==)
 		// 4) Call the result() method and put the answer in a pop-up
 	}
 	
 	// 1) Make 4 static methods (add, subtract, multiply, divide)
 	//		They should each take 2 numbers as parameters
 	//		and return the answer.
-	 
+	 static void add(int v1,int v2) {
+		 int sum =v1+v2;
+				System.out.println(sum);
+	 }
+	 staitc void divide(v1)
 	
 	// 2) Make a static method called " result" that takes a number
 	//		as a parameter and returns the number in a string

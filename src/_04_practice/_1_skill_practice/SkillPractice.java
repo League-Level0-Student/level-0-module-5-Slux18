@@ -76,11 +76,13 @@ JOptionPane.showMessageDialog(null, randNum - Randnum);
 
 void skill4() { // In a pop-up, ask the user for the city they live in
 
-
+String userCity  = JOptionPane.showInputDialog("what city do u live in");
 
 //If they answered "San Diego", tell them they live in America's Finest City
 
-
+//if(userCity = "San Diego"{
+//		JOptionPane.showMessageDialog(null, "u live in amercias finest city")
+//})
 
 //Otherwise, tell them to move to San Diego
 

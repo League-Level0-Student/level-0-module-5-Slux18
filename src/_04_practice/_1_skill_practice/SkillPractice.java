@@ -64,11 +64,12 @@ void skill3() { // Get a random number that is less than 20 and print it to the 
 System.out.println(randNum);
 
 //Get another random number that is less than 10 and print it to the console
-
-
+Random randd = new Random();
+int Randnum = randd.nextInt(10);
+System.out.println(Randnum);
 
 //Using a pop-up, tell the user the difference between the numbers // Hint: use subtraction
-
+JOptionPane.showMessageDialog(null, randNum - Randnum);
 
 
 }

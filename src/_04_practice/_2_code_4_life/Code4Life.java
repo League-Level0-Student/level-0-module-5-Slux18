@@ -14,13 +14,19 @@ public class Code4Life {
 	 * If you are not sure, ask your teacher 
 	 * *****************/
 	static boolean canPlaySounds = true;
+	private void mian() {
+		// TODO Auto-generated method stub
+
 	
 	
 	// 1. Ask the user how many hours they spent coding this week.
-
+String userHours = JOptionPane.showInputDialog("how many hours have you spent coding this week?");
 	// 2. If it is less than or equal to 2, tell them to stop watching YouTube and
 	// write code instead.
-
+int time = Integer.parseInt(userHours);
+if(time <= 2) {
+	JOptionPane.showMessageDialog(null, "stop watching youtube and write code insted");
+}
 	// 3. If it is greater than or equal to 3 AND less than or equal to 5, tell them
 	// they're a Code Ninja
 
@@ -60,4 +66,5 @@ public class Code4Life {
 	}
 	
 
+}
 }
